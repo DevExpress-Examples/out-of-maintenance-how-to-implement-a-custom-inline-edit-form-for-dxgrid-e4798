@@ -1,17 +1,6 @@
 ﻿' Developer Express Code Central Example:
 ' How to implement custom dropdown row editor for DXGrid
 ' 
-' This example demonstrates how to edit grid rows using a separate inline edit
-' form with editors generated automatically based on the underlying row data
-' object. To see this approach in action, click the "Edit" hyperlink in the "#"
-' grid column. To close the edit form, click "Edit" again.
-' 
-' You can find sample updates and versions for different programming languages here:
-' http://www.devexpress.com/example=E4798
-
-' Developer Express Code Central Example:
-' How to implement custom dropdown row editor for DXGrid
-' 
 ' This example demonstrates how to edit grid row using the dropdown panel with
 ' editors generated automatically based on the underlying row data object. To see
 ' this approach in action, click the "Edit" hyperlink in the "#" grid column. To
@@ -38,16 +27,17 @@
 Namespace My
 
 
-    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(), Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "10.0.0.0")> _
-    Friend NotInheritable Partial Class Settings
-        Inherits System.Configuration.ApplicationSettingsBase
+	<System.Runtime.CompilerServices.CompilerGeneratedAttribute()>
+	<System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "10.0.0.0")>
+	Friend NotInheritable Partial Class Settings
+		Inherits System.Configuration.ApplicationSettingsBase
 
-        Private Shared defaultInstance As Settings = (CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
+		Private Shared defaultInstance As Settings = (CType(System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
 
-        Public Shared ReadOnly Property [Default]() As Settings
-            Get
-                Return defaultInstance
-            End Get
-        End Property
-    End Class
+		Public Shared ReadOnly Property [Default]() As Settings
+			Get
+				Return defaultInstance
+			End Get
+		End Property
+	End Class
 End Namespace

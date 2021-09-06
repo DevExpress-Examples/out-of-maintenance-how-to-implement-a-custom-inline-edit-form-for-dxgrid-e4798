@@ -1,17 +1,6 @@
 ﻿' Developer Express Code Central Example:
 ' How to implement custom dropdown row editor for DXGrid
 ' 
-' This example demonstrates how to edit grid rows using a separate inline edit
-' form with editors generated automatically based on the underlying row data
-' object. To see this approach in action, click the "Edit" hyperlink in the "#"
-' grid column. To close the edit form, click "Edit" again.
-' 
-' You can find sample updates and versions for different programming languages here:
-' http://www.devexpress.com/example=E4798
-
-' Developer Express Code Central Example:
-' How to implement custom dropdown row editor for DXGrid
-' 
 ' This example demonstrates how to edit grid row using the dropdown panel with
 ' editors generated automatically based on the underlying row data object. To see
 ' this approach in action, click the "Edit" hyperlink in the "#" grid column. To
@@ -58,11 +47,7 @@ Imports System.Windows
 '[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 
 
-<Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)> 'where the generic resource dictionary is located - where theme specific resource dictionaries are located
-    '(used if a resource is not found in the page, 
-    ' or application resource dictionaries)
-    '(used if a resource is not found in the page, 
-    ' app, or any theme specific resource dictionaries)
+<Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)>
 
 
 ' Version information for an assembly consists of the following four values:
