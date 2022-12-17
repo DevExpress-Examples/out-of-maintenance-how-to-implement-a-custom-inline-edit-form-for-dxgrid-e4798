@@ -1,14 +1,3 @@
-﻿' Developer Express Code Central Example:
-' How to implement custom dropdown row editor for DXGrid
-' 
-' This example demonstrates how to edit grid rows using a separate inline edit
-' form with editors generated automatically based on the underlying row data
-' object. To see this approach in action, click the "Edit" hyperlink in the "#"
-' grid column. To close the edit form, click "Edit" again.
-' 
-' You can find sample updates and versions for different programming languages here:
-' http://www.devexpress.com/example=E4798
-
 ' Developer Express Code Central Example:
 ' How to implement custom dropdown row editor for DXGrid
 ' 
@@ -24,19 +13,14 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4798
-
-Imports System
-Imports System.Collections.Generic
-Imports System.Configuration
-Imports System.Data
-Imports System.Linq
 Imports System.Windows
 
 Namespace DXGrid.CustomDropdownRowEditor
+
     ''' <summary>
     ''' Interaction logic for App.xaml
     ''' </summary>
-    Partial Public Class App
+    Public Partial Class App
         Inherits Application
 
     End Class

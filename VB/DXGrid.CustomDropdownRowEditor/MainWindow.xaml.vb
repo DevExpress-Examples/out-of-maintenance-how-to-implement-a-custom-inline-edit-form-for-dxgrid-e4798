@@ -1,14 +1,3 @@
-﻿' Developer Express Code Central Example:
-' How to implement custom dropdown row editor for DXGrid
-' 
-' This example demonstrates how to edit grid rows using a separate inline edit
-' form with editors generated automatically based on the underlying row data
-' object. To see this approach in action, click the "Edit" hyperlink in the "#"
-' grid column. To close the edit form, click "Edit" again.
-' 
-' You can find sample updates and versions for different programming languages here:
-' http://www.devexpress.com/example=E4798
-
 ' Developer Express Code Central Example:
 ' How to implement custom dropdown row editor for DXGrid
 ' 
@@ -24,36 +13,25 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E4798
-
-Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Data
-Imports System.Windows.Documents
-Imports System.Windows.Input
-Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
-Imports System.Windows.Navigation
-Imports System.Windows.Shapes
 
 Namespace DXGrid.CustomDropdownRowEditor
+
     ''' <summary>
     ''' Interaction logic for MainWindow.xaml
     ''' </summary>
-    Partial Public Class MainWindow
+    Public Partial Class MainWindow
         Inherits Window
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
             Me.dxGrid.ItemsSource = DataSample.GetData(1000)
         End Sub
 
         Private Sub Hyperlink_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Dim info = view.CalcHitInfo(TryCast(e.OriginalSource, DependencyObject))
-            dxGrid.SetMasterRowExpanded(info.RowHandle, (Not dxGrid.IsMasterRowExpanded(info.RowHandle)))
+            Dim info = Me.view.CalcHitInfo(TryCast(e.OriginalSource, DependencyObject))
+            Me.dxGrid.SetMasterRowExpanded(info.RowHandle, Not Me.dxGrid.IsMasterRowExpanded(info.RowHandle))
         End Sub
     End Class
 End Namespace
